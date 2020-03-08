@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link  rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-qdQEsAI45WFCO5QwXBelBe1rR9Nwiss4rGEqiszC+9olH1ScrLrMQr1KmDR964uZ"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title> 评价系统 </title>
+</head>
+<body>
+ <div class="container mt-5" >
+   <div class="form-group">
+     <select name="" id="produce-select"
+             class="form-control custom-select">
+       <option value="0" disabled selected>选择产品</option>
+       <option value="vue">vue</option>
+       <option value="node">node</option>
+       <option value="jquery">juqery</option>
+       <option value="djingo">djingo</option>
+       <option value="flutter">flutter</option>
+     </select>
+   </div>
+   <div class="forn-group">
+     <input type="number" id="rating-control"
+            class="form-control" step="0.1" max="5"
+            placeholder="评分0-5" disabled>
+   </div>
+   <table class="table table-striped">
+     <thead>
+      <th>评教课程</th>
+      <th>评分</th>
+     </thead>
+     <tbody>
+     <tr class="vue">
+       <td>Vue小白入门课程</td>
+       <td>
+         <div class="stars-outer">
+           <div class="stars-inner">
+
+           </div>
+
+         </div>
+         <span class="number-rating"></span>
+       </td>
+     </tr>
+     <tr class="node">
+       <td>Vue小白入门课程</td>
+       <td>
+         <div class="stars-outer">
+           <div class="stars-inner">
+
+           </div>
+           <span class="number-rating"></span>
+         </div>
+       </td>
+     </tr>
+     <tr class="jquery">
+       <td>Vue小白入门课程</td>
+       <td>
+         <div class="stars-outer">
+           <div class="stars-inner">
+
+           </div>
+           <span class="number-rating"></span>
+         </div>
+       </td>
+     </tr>
+     <tr class="djingo">
+       <td>Vue小白入门课程</td>
+       <td>
+         <div class="stars-outer">
+           <div class="stars-inner">
+
+           </div>
+           <span class="number-rating"></span>
+         </div>
+       </td>
+     </tr>
+     <tr class="flutter">
+       <td>Vue小白入门课程</td>
+       <td>
+         <div class="stars-outer">
+           <div class="stars-inner">
+           </div>
+           <span class="number-rating"></span>
+         </div>
+       </td>
+     </tr>
+     </tbody>
+   </table>
+ </div>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
