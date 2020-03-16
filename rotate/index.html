@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>rotate picture</title>
+</head>
+<body>
+  <div class="slider">
+    <div class="slide  visible">
+      <img src="./img/city1.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="./img/city2.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="./img/city3.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="./img/city4.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="./img/city5.jpg" alt="">
+    </div>
+  </div>
+
+
+  <script>
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+
+
+    let activeSlide = 0;
+
+    function changeSlide() {
+      slides[activeSlide++].classList.remove("visible");
+      if (activeSlide>= slides.length) {
+        activeSlide = 0;
+      }
+
+      slides[activeSlide].classList.add("visible");
+    }
+
+
+    slider.addEventListener("animationstart", ()=> {
+      setInterval(changeSlide,2000);
+    })
+
+  </script>
+</body>
+</html>
